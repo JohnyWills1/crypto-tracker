@@ -1,0 +1,3 @@
+{
+    "extends": ["stylelint-config-primer", "stylelint-config-prettier"]
+}
