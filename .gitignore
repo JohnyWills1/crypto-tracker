@@ -38,3 +38,9 @@ typings/
 lib/*.js
 test/*.js
 *.map
+
+# Other
+.next
+dist
+.env.local
+.env
