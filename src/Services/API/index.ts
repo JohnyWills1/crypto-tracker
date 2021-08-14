@@ -4,6 +4,7 @@ import axios from 'axios';
 
 // #region Local Imports
 import APIError from './APIError';
+import fetchCryptos from './Cryptocurrencies';
 // #enregion Local Imports
 
 const axiosInstance = axios.create();
@@ -24,3 +25,4 @@ axiosInstance.interceptors.response.use(
 export default axiosInstance;
 export type { APIError };
 // export * from './Auth';
+export { fetchCryptos };
