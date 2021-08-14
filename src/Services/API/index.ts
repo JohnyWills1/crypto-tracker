@@ -9,6 +9,8 @@ import APIError from './APIError';
 const axiosInstance = axios.create();
 
 axiosInstance.defaults.baseURL = process.env.NEXT_PUBLIC_API_URL;
+axiosInstance.defaults.headers['X-CMC_PRO_API_KEY'] =
+    process.env.NEXT_PUBLIC_API_KEY;
 axiosInstance.defaults.withCredentials = true;
 
 axiosInstance.interceptors.response.use(
